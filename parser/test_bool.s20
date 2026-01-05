@@ -1,0 +1,21 @@
+TASK_NAME tBOOL;
+START
+VARIABLE
+    BOOL fLAG;
+    INT16T vALUE;
+    INT16T rESULT;
+
+TRUE -> fLAG;
+
+IF fLAG THEN
+    vALUE + 5 -> rESULT;
+ELSE
+    vALUE - 5 -> rESULT;
+    
+WRITE("Flag is: ");
+WRITE(fLAG);
+WRITE("Result is: ");
+WRITE(rESULT);
+STOP
+
+

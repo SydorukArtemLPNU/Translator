@@ -1,0 +1,125 @@
+------------------------------------------------------------------------------------------------
+| Рядок | Лексема | Значення (Посилання) | Код | Тип        |
+------------------------------------------------------------------------------------------------
+| 1          | TASK_NAME      | -                                     | 100    | TaskName      |
+| 1          | tESTCYC        | @id0                                  | 200    | Identifier    |
+| 1          | ;              | -                                     | 500    | Semicolon     |
+| 2          | START          | -                                     | 101    | StartProgram  |
+| 3          | VARIABLE       | -                                     | 102    | Variable      |
+| 4          | INT16T         | -                                     | 105    | IntType       |
+| 4          | i              | @id1                                  | 200    | Identifier    |
+| 4          | ,              | -                                     | 501    | Comma         |
+| 4          | sUM            | @id2                                  | 200    | Identifier    |
+| 4          | ,              | -                                     | 501    | Comma         |
+| 4          | aRR            | @id3                                  | 200    | Identifier    |
+| 4          | [              | -                                     | 505    | LSquare       |
+| 4          | 5              | 5                                     | 300    | IntegerNumber |
+| 4          | ]              | -                                     | 506    | RSquare       |
+| 4          | ;              | -                                     | 500    | Semicolon     |
+| 5          | FLOAT32        | -                                     | 106    | FloatType     |
+| 5          | pROD           | @id4                                  | 200    | Identifier    |
+| 5          | ;              | -                                     | 500    | Semicolon     |
+| 8          | 0              | 0                                     | 300    | IntegerNumber |
+| 8          | ->             | -                                     | 400    | Assignment    |
+| 8          | sUM            | @id2                                  | 200    | Identifier    |
+| 8          | ;              | -                                     | 500    | Semicolon     |
+| 9          | 1              | 1                                     | 300    | IntegerNumber |
+| 9          | ->             | -                                     | 400    | Assignment    |
+| 9          | pROD           | @id4                                  | 200    | Identifier    |
+| 9          | ;              | -                                     | 500    | Semicolon     |
+| 11         | REPEAT         | -                                     | 115    | Repeat        |
+| 12         | sUM            | @id2                                  | 200    | Identifier    |
+| 12         | +              | -                                     | 401    | Add           |
+| 12         | i              | @id1                                  | 200    | Identifier    |
+| 12         | ->             | -                                     | 400    | Assignment    |
+| 12         | sUM            | @id2                                  | 200    | Identifier    |
+| 12         | ;              | -                                     | 500    | Semicolon     |
+| 13         | pROD           | @id4                                  | 200    | Identifier    |
+| 13         | *              | -                                     | 403    | Multiply      |
+| 13         | 2              | 2                                     | 300    | IntegerNumber |
+| 13         | ->             | -                                     | 400    | Assignment    |
+| 13         | pROD           | @id4                                  | 200    | Identifier    |
+| 13         | ;              | -                                     | 500    | Semicolon     |
+| 14         | i              | @id1                                  | 200    | Identifier    |
+| 14         | +              | -                                     | 401    | Add           |
+| 14         | 1              | 1                                     | 300    | IntegerNumber |
+| 14         | ->             | -                                     | 400    | Assignment    |
+| 14         | i              | @id1                                  | 200    | Identifier    |
+| 14         | ;              | -                                     | 500    | Semicolon     |
+| 15         | UNTIL          | -                                     | 116    | Until         |
+| 15         | i              | @id1                                  | 200    | Identifier    |
+| 15         | >              | -                                     | 408    | GreaterThan   |
+| 15         | 5              | 5                                     | 300    | IntegerNumber |
+| 15         | ;              | -                                     | 500    | Semicolon     |
+| 18         | 0              | 0                                     | 300    | IntegerNumber |
+| 18         | ->             | -                                     | 400    | Assignment    |
+| 18         | i              | @id1                                  | 200    | Identifier    |
+| 18         | ;              | -                                     | 500    | Semicolon     |
+| 19         | REPEAT         | -                                     | 115    | Repeat        |
+| 20         | i              | @id1                                  | 200    | Identifier    |
+| 20         | *              | -                                     | 403    | Multiply      |
+| 20         | 2              | 2                                     | 300    | IntegerNumber |
+| 20         | ->             | -                                     | 400    | Assignment    |
+| 20         | aRR            | @id3                                  | 200    | Identifier    |
+| 20         | [              | -                                     | 505    | LSquare       |
+| 20         | i              | @id1                                  | 200    | Identifier    |
+| 20         | ]              | -                                     | 506    | RSquare       |
+| 20         | ;              | -                                     | 500    | Semicolon     |
+| 21         | i              | @id1                                  | 200    | Identifier    |
+| 21         | +              | -                                     | 401    | Add           |
+| 21         | 1              | 1                                     | 300    | IntegerNumber |
+| 21         | ->             | -                                     | 400    | Assignment    |
+| 21         | i              | @id1                                  | 200    | Identifier    |
+| 21         | ;              | -                                     | 500    | Semicolon     |
+| 22         | UNTIL          | -                                     | 116    | Until         |
+| 22         | i              | @id1                                  | 200    | Identifier    |
+| 22         | >=             | -                                     | 410    | GreaterEqual  |
+| 22         | 5              | 5                                     | 300    | IntegerNumber |
+| 22         | ;              | -                                     | 500    | Semicolon     |
+| 25         | WRITE          | -                                     | 104    | Output        |
+| 25         | (              | -                                     | 503    | LParen        |
+| 25         | sUM            | @id2                                  | 200    | Identifier    |
+| 25         | )              | -                                     | 504    | RParen        |
+| 25         | ;              | -                                     | 500    | Semicolon     |
+| 26         | WRITE          | -                                     | 104    | Output        |
+| 26         | (              | -                                     | 503    | LParen        |
+| 26         | pROD           | @id4                                  | 200    | Identifier    |
+| 26         | )              | -                                     | 504    | RParen        |
+| 26         | ;              | -                                     | 500    | Semicolon     |
+| 27         | WRITE          | -                                     | 104    | Output        |
+| 27         | (              | -                                     | 503    | LParen        |
+| 27         | aRR            | @id3                                  | 200    | Identifier    |
+| 27         | [              | -                                     | 505    | LSquare       |
+| 27         | 0              | 0                                     | 300    | IntegerNumber |
+| 27         | ]              | -                                     | 506    | RSquare       |
+| 27         | )              | -                                     | 504    | RParen        |
+| 27         | ;              | -                                     | 500    | Semicolon     |
+| 28         | WRITE          | -                                     | 104    | Output        |
+| 28         | (              | -                                     | 503    | LParen        |
+| 28         | aRR            | @id3                                  | 200    | Identifier    |
+| 28         | [              | -                                     | 505    | LSquare       |
+| 28         | 4              | 4                                     | 300    | IntegerNumber |
+| 28         | ]              | -                                     | 506    | RSquare       |
+| 28         | )              | -                                     | 504    | RParen        |
+| 28         | ;              | -                                     | 500    | Semicolon     |
+| 29         | WRITE          | -                                     | 104    | Output        |
+| 29         | (              | -                                     | 503    | LParen        |
+| 29         | l0             | @l0                                   | 302    | StringLiteral |
+| 29         | )              | -                                     | 504    | RParen        |
+| 29         | ;              | -                                     | 500    | Semicolon     |
+| 30         | STOP           | -                                     | 107    | StopProgram   |
+------------------------------------------------------------------------------------------------
+
+Таблиця літералів:
+--------------------------
+Індекс | Літерал
+--------------------------
+l0    | Cycle done
+--------------------------
+
+Таблиця ідентифікаторів:
+id0: tESTCYC
+id1: i
+id2: sUM
+id3: aRR
+id4: pROD

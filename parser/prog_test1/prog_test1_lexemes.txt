@@ -1,0 +1,65 @@
+------------------------------------------------------------------------------------------------
+| Рядок | Лексема | Значення (Посилання) | Код | Тип        |
+------------------------------------------------------------------------------------------------
+| 1          | TASK_NAME      | -                                     | 100    | TaskName      |
+| 1          | pROGRAM        | @id0                                  | 200    | Identifier    |
+| 1          | ;              | -                                     | 500    | Semicolon     |
+| 2          | START          | -                                     | 101    | StartProgram  |
+| 3          | VARIABLE       | -                                     | 102    | Variable      |
+| 4          | INT16T         | -                                     | 105    | IntType       |
+| 4          | x              | @id1                                  | 200    | Identifier    |
+| 4          | ,              | -                                     | 501    | Comma         |
+| 4          | y              | @id2                                  | 200    | Identifier    |
+| 4          | ;              | -                                     | 500    | Semicolon     |
+| 5          | FLOAT32        | -                                     | 106    | FloatType     |
+| 5          | rESULT         | @id3                                  | 200    | Identifier    |
+| 5          | ;              | -                                     | 500    | Semicolon     |
+| 8          | 10             | 10                                    | 300    | IntegerNumber |
+| 8          | ->             | -                                     | 400    | Assignment    |
+| 8          | x              | @id1                                  | 200    | Identifier    |
+| 8          | ;              | -                                     | 500    | Semicolon     |
+| 9          | 20             | 20                                    | 300    | IntegerNumber |
+| 9          | ->             | -                                     | 400    | Assignment    |
+| 9          | y              | @id2                                  | 200    | Identifier    |
+| 9          | ;              | -                                     | 500    | Semicolon     |
+| 10         | x              | @id1                                  | 200    | Identifier    |
+| 10         | +              | -                                     | 401    | Add           |
+| 10         | y              | @id2                                  | 200    | Identifier    |
+| 10         | ->             | -                                     | 400    | Assignment    |
+| 10         | rESULT         | @id3                                  | 200    | Identifier    |
+| 10         | ;              | -                                     | 500    | Semicolon     |
+| 12         | IF             | -                                     | 108    | If            |
+| 12         | x              | @id1                                  | 200    | Identifier    |
+| 12         | >              | -                                     | 408    | GreaterThan   |
+| 12         | y              | @id2                                  | 200    | Identifier    |
+| 12         | THEN           | -                                     | 109    | Then          |
+| 13         | WRITE          | -                                     | 104    | Output        |
+| 13         | (              | -                                     | 503    | LParen        |
+| 13         | x              | @id1                                  | 200    | Identifier    |
+| 13         | )              | -                                     | 504    | RParen        |
+| 13         | ;              | -                                     | 500    | Semicolon     |
+| 14         | ELSE           | -                                     | 114    | Else          |
+| 15         | WRITE          | -                                     | 104    | Output        |
+| 15         | (              | -                                     | 503    | LParen        |
+| 15         | y              | @id2                                  | 200    | Identifier    |
+| 15         | )              | -                                     | 504    | RParen        |
+| 15         | ;              | -                                     | 500    | Semicolon     |
+| 17         | REPEAT         | -                                     | 115    | Repeat        |
+| 18         | x              | @id1                                  | 200    | Identifier    |
+| 18         | +              | -                                     | 401    | Add           |
+| 18         | 1              | 1                                     | 300    | IntegerNumber |
+| 18         | ->             | -                                     | 400    | Assignment    |
+| 18         | x              | @id1                                  | 200    | Identifier    |
+| 19         | UNTIL          | -                                     | 116    | Until         |
+| 19         | x              | @id1                                  | 200    | Identifier    |
+| 19         | >              | -                                     | 408    | GreaterThan   |
+| 19         | 10             | 10                                    | 300    | IntegerNumber |
+| 19         | ;              | -                                     | 500    | Semicolon     |
+| 21         | STOP           | -                                     | 107    | StopProgram   |
+------------------------------------------------------------------------------------------------
+
+Таблиця ідентифікаторів:
+id0: pROGRAM
+id1: x
+id2: y
+id3: rESULT

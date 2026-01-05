@@ -1,0 +1,18 @@
+TASK_NAME tESTLIN;
+START
+VARIABLE
+  INT16T x, y, z;
+  FLOAT32 rES;
+
+  // Лінійна послідовність операторів //
+  10 -> x;
+  20 -> y;
+  x + y -> z;
+  z * 2 -> rES;
+  
+  WRITE(x);
+  WRITE(y);
+  WRITE(z);
+  WRITE(rES);
+  WRITE("Done");
+STOP

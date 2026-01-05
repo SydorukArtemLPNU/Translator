@@ -1,0 +1,79 @@
+------------------------------------------------------------------------------------------------
+| Рядок | Лексема | Значення (Посилання) | Код | Тип        |
+------------------------------------------------------------------------------------------------
+| 1          | TASK_NAME      | -                                     | 100    | TaskName      |
+| 1          | tESTLIN        | @id0                                  | 200    | Identifier    |
+| 1          | ;              | -                                     | 500    | Semicolon     |
+| 2          | START          | -                                     | 101    | StartProgram  |
+| 3          | VARIABLE       | -                                     | 102    | Variable      |
+| 4          | INT16T         | -                                     | 105    | IntType       |
+| 4          | x              | @id1                                  | 200    | Identifier    |
+| 4          | ,              | -                                     | 501    | Comma         |
+| 4          | y              | @id2                                  | 200    | Identifier    |
+| 4          | ,              | -                                     | 501    | Comma         |
+| 4          | z              | @id3                                  | 200    | Identifier    |
+| 4          | ;              | -                                     | 500    | Semicolon     |
+| 5          | FLOAT32        | -                                     | 106    | FloatType     |
+| 5          | rES            | @id4                                  | 200    | Identifier    |
+| 5          | ;              | -                                     | 500    | Semicolon     |
+| 8          | 10             | 10                                    | 300    | IntegerNumber |
+| 8          | ->             | -                                     | 400    | Assignment    |
+| 8          | x              | @id1                                  | 200    | Identifier    |
+| 8          | ;              | -                                     | 500    | Semicolon     |
+| 9          | 20             | 20                                    | 300    | IntegerNumber |
+| 9          | ->             | -                                     | 400    | Assignment    |
+| 9          | y              | @id2                                  | 200    | Identifier    |
+| 9          | ;              | -                                     | 500    | Semicolon     |
+| 10         | x              | @id1                                  | 200    | Identifier    |
+| 10         | +              | -                                     | 401    | Add           |
+| 10         | y              | @id2                                  | 200    | Identifier    |
+| 10         | ->             | -                                     | 400    | Assignment    |
+| 10         | z              | @id3                                  | 200    | Identifier    |
+| 10         | ;              | -                                     | 500    | Semicolon     |
+| 11         | z              | @id3                                  | 200    | Identifier    |
+| 11         | *              | -                                     | 403    | Multiply      |
+| 11         | 2              | 2                                     | 300    | IntegerNumber |
+| 11         | ->             | -                                     | 400    | Assignment    |
+| 11         | rES            | @id4                                  | 200    | Identifier    |
+| 11         | ;              | -                                     | 500    | Semicolon     |
+| 13         | WRITE          | -                                     | 104    | Output        |
+| 13         | (              | -                                     | 503    | LParen        |
+| 13         | x              | @id1                                  | 200    | Identifier    |
+| 13         | )              | -                                     | 504    | RParen        |
+| 13         | ;              | -                                     | 500    | Semicolon     |
+| 14         | WRITE          | -                                     | 104    | Output        |
+| 14         | (              | -                                     | 503    | LParen        |
+| 14         | y              | @id2                                  | 200    | Identifier    |
+| 14         | )              | -                                     | 504    | RParen        |
+| 14         | ;              | -                                     | 500    | Semicolon     |
+| 15         | WRITE          | -                                     | 104    | Output        |
+| 15         | (              | -                                     | 503    | LParen        |
+| 15         | z              | @id3                                  | 200    | Identifier    |
+| 15         | )              | -                                     | 504    | RParen        |
+| 15         | ;              | -                                     | 500    | Semicolon     |
+| 16         | WRITE          | -                                     | 104    | Output        |
+| 16         | (              | -                                     | 503    | LParen        |
+| 16         | rES            | @id4                                  | 200    | Identifier    |
+| 16         | )              | -                                     | 504    | RParen        |
+| 16         | ;              | -                                     | 500    | Semicolon     |
+| 17         | WRITE          | -                                     | 104    | Output        |
+| 17         | (              | -                                     | 503    | LParen        |
+| 17         | l0             | @l0                                   | 302    | StringLiteral |
+| 17         | )              | -                                     | 504    | RParen        |
+| 17         | ;              | -                                     | 500    | Semicolon     |
+| 18         | STOP           | -                                     | 107    | StopProgram   |
+------------------------------------------------------------------------------------------------
+
+Таблиця літералів:
+--------------------------
+Індекс | Літерал
+--------------------------
+l0    | Done
+--------------------------
+
+Таблиця ідентифікаторів:
+id0: tESTLIN
+id1: x
+id2: y
+id3: z
+id4: rES

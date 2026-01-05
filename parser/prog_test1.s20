@@ -1,0 +1,21 @@
+TASK_NAME pROGRAM;
+START
+VARIABLE
+  INT16T x, y;
+  FLOAT32 rESULT;
+
+  // Коментар //
+  10 -> x;
+  20 -> y;
+  x + y -> rESULT;
+  
+  IF x > y THEN
+     WRITE(x);
+  ELSE
+     WRITE(y);
+  
+  REPEAT
+     x + 1 -> x
+  UNTIL x > 10;
+  
+STOP

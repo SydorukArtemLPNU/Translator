@@ -1,0 +1,30 @@
+TASK_NAME tESTCYC;
+START
+VARIABLE
+  INT16T i, sUM, aRR[5];
+  FLOAT32 pROD;
+
+  // Тестування циклу REPEAT-UNTIL //
+  0 -> sUM;
+  1 -> pROD;
+  
+  REPEAT
+     sUM + i -> sUM;
+     pROD * 2 -> pROD;
+     i + 1 -> i;
+  UNTIL i > 5;
+  
+  // Ініціалізація масиву //
+  0 -> i;
+  REPEAT
+     i * 2 -> aRR[i];
+     i + 1 -> i;
+  UNTIL i >= 5;
+  
+  // Вивід результатів //
+  WRITE(sUM);
+  WRITE(pROD);
+  WRITE(aRR[0]);
+  WRITE(aRR[4]);
+  WRITE("Cycle done");
+STOP

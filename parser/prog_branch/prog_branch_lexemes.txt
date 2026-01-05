@@ -1,0 +1,102 @@
+------------------------------------------------------------------------------------------------
+| Рядок | Лексема | Значення (Посилання) | Код | Тип        |
+------------------------------------------------------------------------------------------------
+| 1          | TASK_NAME      | -                                     | 100    | TaskName      |
+| 1          | tESTBR         | @id0                                  | 200    | Identifier    |
+| 1          | ;              | -                                     | 500    | Semicolon     |
+| 2          | START          | -                                     | 101    | StartProgram  |
+| 3          | VARIABLE       | -                                     | 102    | Variable      |
+| 4          | INT16T         | -                                     | 105    | IntType       |
+| 4          | a              | @id1                                  | 200    | Identifier    |
+| 4          | ,              | -                                     | 501    | Comma         |
+| 4          | b              | @id2                                  | 200    | Identifier    |
+| 4          | ,              | -                                     | 501    | Comma         |
+| 4          | mAXVAL         | @id3                                  | 200    | Identifier    |
+| 4          | ;              | -                                     | 500    | Semicolon     |
+| 5          | FLOAT32        | -                                     | 106    | FloatType     |
+| 5          | x              | @id4                                  | 200    | Identifier    |
+| 5          | ,              | -                                     | 501    | Comma         |
+| 5          | y              | @id5                                  | 200    | Identifier    |
+| 5          | ;              | -                                     | 500    | Semicolon     |
+| 8          | 15             | 15                                    | 300    | IntegerNumber |
+| 8          | ->             | -                                     | 400    | Assignment    |
+| 8          | a              | @id1                                  | 200    | Identifier    |
+| 8          | ;              | -                                     | 500    | Semicolon     |
+| 9          | 25             | 25                                    | 300    | IntegerNumber |
+| 9          | ->             | -                                     | 400    | Assignment    |
+| 9          | b              | @id2                                  | 200    | Identifier    |
+| 9          | ;              | -                                     | 500    | Semicolon     |
+| 11         | IF             | -                                     | 108    | If            |
+| 11         | a              | @id1                                  | 200    | Identifier    |
+| 11         | >              | -                                     | 408    | GreaterThan   |
+| 11         | b              | @id2                                  | 200    | Identifier    |
+| 11         | THEN           | -                                     | 109    | Then          |
+| 12         | a              | @id1                                  | 200    | Identifier    |
+| 12         | ->             | -                                     | 400    | Assignment    |
+| 12         | mAXVAL         | @id3                                  | 200    | Identifier    |
+| 12         | ;              | -                                     | 500    | Semicolon     |
+| 13         | ELSE           | -                                     | 114    | Else          |
+| 14         | b              | @id2                                  | 200    | Identifier    |
+| 14         | ->             | -                                     | 400    | Assignment    |
+| 14         | mAXVAL         | @id3                                  | 200    | Identifier    |
+| 14         | ;              | -                                     | 500    | Semicolon     |
+| 16         | 10.5           | 10.5                                  | 301    | RealNumber    |
+| 16         | ->             | -                                     | 400    | Assignment    |
+| 16         | x              | @id4                                  | 200    | Identifier    |
+| 16         | ;              | -                                     | 500    | Semicolon     |
+| 17         | 20.3           | 20.3                                  | 301    | RealNumber    |
+| 17         | ->             | -                                     | 400    | Assignment    |
+| 17         | y              | @id5                                  | 200    | Identifier    |
+| 17         | ;              | -                                     | 500    | Semicolon     |
+| 19         | IF             | -                                     | 108    | If            |
+| 19         | x              | @id4                                  | 200    | Identifier    |
+| 19         | +              | -                                     | 401    | Add           |
+| 19         | y              | @id5                                  | 200    | Identifier    |
+| 19         | >              | -                                     | 408    | GreaterThan   |
+| 19         | 30.0           | 30.0                                  | 301    | RealNumber    |
+| 19         | THEN           | -                                     | 109    | Then          |
+| 20         | WRITE          | -                                     | 104    | Output        |
+| 20         | (              | -                                     | 503    | LParen        |
+| 20         | l0             | @l0                                   | 302    | StringLiteral |
+| 20         | )              | -                                     | 504    | RParen        |
+| 20         | ;              | -                                     | 500    | Semicolon     |
+| 21         | ELSE           | -                                     | 114    | Else          |
+| 22         | WRITE          | -                                     | 104    | Output        |
+| 22         | (              | -                                     | 503    | LParen        |
+| 22         | l1             | @l1                                   | 302    | StringLiteral |
+| 22         | )              | -                                     | 504    | RParen        |
+| 22         | ;              | -                                     | 500    | Semicolon     |
+| 24         | IF             | -                                     | 108    | If            |
+| 24         | a              | @id1                                  | 200    | Identifier    |
+| 24         | ==             | -                                     | 406    | Equal         |
+| 24         | b              | @id2                                  | 200    | Identifier    |
+| 24         | THEN           | -                                     | 109    | Then          |
+| 25         | WRITE          | -                                     | 104    | Output        |
+| 25         | (              | -                                     | 503    | LParen        |
+| 25         | l2             | @l2                                   | 302    | StringLiteral |
+| 25         | )              | -                                     | 504    | RParen        |
+| 25         | ;              | -                                     | 500    | Semicolon     |
+| 27         | WRITE          | -                                     | 104    | Output        |
+| 27         | (              | -                                     | 503    | LParen        |
+| 27         | mAXVAL         | @id3                                  | 200    | Identifier    |
+| 27         | )              | -                                     | 504    | RParen        |
+| 27         | ;              | -                                     | 500    | Semicolon     |
+| 28         | STOP           | -                                     | 107    | StopProgram   |
+------------------------------------------------------------------------------------------------
+
+Таблиця літералів:
+--------------------------
+Індекс | Літерал
+--------------------------
+l0    | Sum > 30
+l1    | Sum <= 30
+l2    | Equal
+--------------------------
+
+Таблиця ідентифікаторів:
+id0: tESTBR
+id1: a
+id2: b
+id3: mAXVAL
+id4: x
+id5: y

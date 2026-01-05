@@ -1,0 +1,28 @@
+TASK_NAME tESTBR;
+START
+VARIABLE
+  INT16T a, b, mAXVAL;
+  FLOAT32 x, y;
+
+  // Тестування розгалуження //
+  15 -> a;
+  25 -> b;
+  
+  IF a > b THEN
+     a -> mAXVAL;
+  ELSE
+     b -> mAXVAL;
+  
+  10.5 -> x;
+  20.3 -> y;
+  
+  IF x + y > 30.0 THEN
+     WRITE("Sum > 30");
+  ELSE
+     WRITE("Sum <= 30");
+  
+  IF a == b THEN
+     WRITE("Equal");
+  
+  WRITE(mAXVAL);
+STOP
